@@ -12,12 +12,12 @@ export default function RegisterPage() {
     console.log("FORM SUBMITTED");
 
     try {
-      const res = await fetch("https://quizengine-makv.onrender.com/api/auth/register", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ name, email, password }),
+
+      import api from "../utils/api";
+      const res = await api.post("/auth/register", {
+        username: name,
+        email,
+        password,
       });
 
       const data = await res.json();
