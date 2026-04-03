@@ -10,6 +10,7 @@ connectDB();
 const app = express();
 app.use(cors({
   origin: [
+     "http://localhost:3000",
     "https://quizengine-sepia.vercel.app"
   ],
   credentials: true
