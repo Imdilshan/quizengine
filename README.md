@@ -3,6 +3,18 @@
 An algorithm-powered interactive quiz platform with adaptive scoring, dependency-based topic unlocking, and real-time leaderboards.
 
 ---
+## 🚀 Live Demo
+
+- Frontend: https://quizengine-sepia.vercel.app
+- Backend API: https://quizengine-makv.onrender.com
+
+## 📌 Features
+- User authentication (JWT)
+- Topic-based quiz system
+- Adaptive unlocking of topics
+- Leaderboard system
+- Real-time scoring
+---
 
 ## 📁 Project Structure
 
