@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-const API = axios.create({
+const api = axios.create({
   baseURL: "https://quizengine-makv.onrender.com/api"
 });
 
