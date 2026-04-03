@@ -15,6 +15,9 @@ app.use(cors({
   ],
   credentials: true
 }));
+app.get("/", (req, res) => {
+  res.send("QuizEngine API is running 🚀");
+});
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -47,3 +50,4 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`🚀 QuizEngine server running on http://localhost:${PORT}`);
 });
+
