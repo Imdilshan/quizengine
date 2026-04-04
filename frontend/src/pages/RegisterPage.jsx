@@ -1,6 +1,7 @@
 console.log("REGISTER PAGE LOADED");
 
 import React, { useState } from "react";
+import api from "../utils/api";
 
 export default function RegisterPage() {
   const [name, setName] = useState("");
@@ -12,8 +13,6 @@ export default function RegisterPage() {
     console.log("FORM SUBMITTED");
 
     try {
-
-      import api from "../utils/api";
       const res = await api.post("/auth/register", {
         username: name,
         email,
